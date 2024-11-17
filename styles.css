@@ -1,0 +1,77 @@
+* {
+    font-family: 'JetBrains';
+    font-weight: 600;
+    --primary-color: #455A64;
+    --secondary-color: #8B9467;
+    --accent-color: #34A85A;
+    --background-color: #F7F7F7;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 3vh;
+    align-items: center;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: 500ms all ease;
+}
+
+form:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 1);
+    transform: scale(1.005);
+}
+
+form input[type=button] {
+    margin-top: 20px;
+    height: 70px;
+    margin: 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+    transition: 300ms all ease;
+}
+
+form input[type=button]:hover {
+    transform: scale(1.1);
+}
+
+form input[type=button]:focus {
+    background-color: var(--secondary-color);
+}
+
+fieldset {
+    grid-column: 1/5;
+    text-align: right;
+    background-image: linear-gradient(#e6e6e6, #eee, #bebebe);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+}
+
+label {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+#btn13 {
+    grid-column: 1/3;
+}
+
+#btn15 {
+    grid-column: 3/5;
+}
